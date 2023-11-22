@@ -10,10 +10,10 @@ import org.junit.runners.MethodSorters;
 import cadastroUser.BaseCadastroUser;
 import io.restassured.http.ContentType;
 import metodos.Metodos;
-
+import core.BaseTest;
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-public class Tests {
+public class Tests extends BaseTest{
 
 	Metodos.FullName randomName = Metodos.generateRandomName();
 	String firstName = randomName.getFirstName();
